@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="../core/jq/jquery-3.1.0.js"></script>
+    <script src="../core/jq.vat.js"></script>
+    <style type="text/css">
+      #target{
+        height: 50px;
+        background: lightgrey;
+        width: 200px;
+      }
+      #test-container{
+        border: 1px solid black;
+        width: 500px;
+      }
+      #test1{
+        height: 65px;
+        background: red;
+        color: white;
+        width:300px;
+      }
+      #test2{
+        background: green;
+        color: white;
+        height: 100px;
+        width:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target" class="v-align-this">This is a test</div>
+    <br><br>
+    <div>This is the header:<br>
+      <div id="test-container">
+        <div id="test1" class="v-align-this" data-vAlign="middle" data-hAlign="right">Vertical Align: Middle;<br>Horizontal Align: Right</div>
+        <br><br>
+        <div id="test2" class="v-align-this" data-vAlign="top" data-hAlign="left">Vertical Align: Top; Horizontal Align: Left</div>
+      </div>
+    </div>
+  </body>
+</html>
