@@ -7,7 +7,8 @@ Platforms successfully tested on:
 * Microsoft Edge 38.14393.0.0 (Microsoft EdgeHTML 14.14393)
 * Internet Explorer 8, 9, 10, 11 (Emulate with mentioned Edge browser)
 * Firefox 45.0 (for Acer)
-###Setup
+
+### Setup
 To setup this plugin, simply add the class `v-align-this` to the target DIV element you would like to vertically align.
 The default options are:
 ```javascript
@@ -17,9 +18,20 @@ The default options are:
   otherCSS : {}
 }
 ```
+vAlignment  : Vertical alignment
+hAlignment  : Horizontal alignment
+otherCSS    : Pass a javascript object with CSS attributes to additionally customize the div. Note: You will not be able to adjust the `display`, `vertical-align` or `text-align` properties since that would interfere with the effects set by the plugin.
 
-###Envoke
-If you want to envoke this plugin, you can select the target div and envoke the constructor like so:
+## Methods:
+### Init
+If you want to initialize this plugin, you can select the target div and envoke the constructor like so:
 ```javascript
 $('.targets').valign();
 ```
+### Destroy
+If you want to remove all effects of the plugin from a specific div(s), issue the `destroy` command:
+```javascript
+$('.targets').valign('destroy');
+```
+
+More to come...
