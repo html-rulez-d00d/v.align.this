@@ -19,8 +19,11 @@ The default options are:
 }
 ```
 vAlignment  : Vertical alignment.
+
 hAlignment  : Horizontal alignment.
+
 otherCSS    : Pass a javascript object with CSS attributes to additionally customize the div. Note: You will not be able to adjust the `display`, `vertical-align` or `text-align` properties since that would interfere with the effects set by the plugin.
+
 You can also add the following attributes to the div element to specify the desired alignment: `data-vAlign="middle"` or `data-hAlign="right"`.
 Example:
 ```html
